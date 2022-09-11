@@ -1,5 +1,4 @@
 import React from "react";
-import { GoogleOutlined, FacebookOutlined } from "@ant-design/icons";
 import { auth } from "./Firebase";
 import {
   getAuth,
@@ -96,7 +95,10 @@ const Login = () => {
                   class="group h-12 px-6 border-2 border-gray-300 rounded-full transition duration-300 
      hover:border-blue-400 focus:bg-blue-50 active:bg-blue-100"
                 >
-                  <div onClick={authWithGithub} class="relative flex items-center space-x-4 justify-center">
+                  <div
+                    onClick={authWithGithub}
+                    class="relative flex items-center space-x-4 justify-center"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
